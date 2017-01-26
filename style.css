@@ -1,0 +1,57 @@
+html {
+  background: #A2EEE6;
+}
+
+.floater {
+  position: absolute;
+}
+
+#box1 {
+  background-color: #DB7ACC;
+  width: 74%;
+  height: 100%;
+  top: 17%;
+  left: 15%;
+  z-index: 1;
+}
+
+#box2 {
+  background-color: #fff;
+  width: 84%;
+  height: 100%;
+  top: 25%;
+  left: 11%;
+  z-index: 3;
+}
+
+#box3 {
+  background-color: #FFC600;
+  width: 18%;
+  height: 50%;
+  top: 31%;
+  left: 2%;
+  z-index: 5;
+}
+
+#box3 li {
+  font-family: 'futura', 'helvetica', 'Roboto', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  border-bottom: 3px solid black;
+  padding: 20px 20px 20px 0;
+  width: 75%;
+}
+
+#box3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#zuko-title {
+  position: absolute;
+  width: 35%;
+  height: auto;
+  margin-left: 15%;
+  margin-top: 2.6%;
+  z-index: 4;
+}
