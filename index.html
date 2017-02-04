@@ -7,17 +7,44 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-    <img id="zuko-title" src="zuko-title.svg" alt="Zuko">
-    <div id="box1" class="floater"></div>
-    <div id="box2" class="floater"></div>
-    <div id="box3" class="floater">
+    <div id="box1"></div>
+    <div id="zuko-title" >
+      <img src="z.svg" alt="Zuko">
+    </div>
+    <div id="box2">
+      <!-- <div class="intro-text">
+        <h3>hi, i'm Zuko the dog.</h3>
+      </div> -->
+      <img id="zuko-bolts" src="zuko-bolts.svg" alt="">
+    </div>
+    <div id="box3">
       <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">frolicking</a></li>
+        <li><a href="#" id="about">about</a></li>
+        <li><a href="#" id="frolicking">frolicking</a></li>
         <li><a href="#">my 'rents</a></li>
         <li><a href="#">stuff</a></li>
       </ul>
     </div>
+    <div id="frolicking-page" class="hidden">
+
+    </div>
 
   </body>
 </html>
+
+<script>
+
+  function unhide(e) {
+    e.preventDefault();
+    var frolickingPage = document.getElementById('frolicking-page');
+    var zukoPic = document.getElementById('zuko-bolts');
+    var box2 = document.getElementById('box2')
+    zukoPic.classList.add('hidden');
+    box2.classList.add('hidden');
+    frolickingPage.classList.remove('hidden');
+  }
+
+  var frolickingLink = document.getElementById('frolicking');
+  frolickingLink.addEventListener('click', unhide);
+
+</script>

@@ -1,45 +1,71 @@
-html {
+html, body {
   background: #A2EEE6;
-}
-
-.floater {
-  position: absolute;
+  font-family: 'futura', 'helvetica', 'Roboto', sans-serif;
+  height: 100%;
 }
 
 #box1 {
   background-color: #DB7ACC;
-  width: 74%;
+  width: 76%;
   height: 100%;
-  top: 17%;
+  margin-top: 6%;
   left: 15%;
-  z-index: 1;
+  /*z-index: 1;*/
+  position: absolute;
 }
 
 #box2 {
   background-color: #fff;
-  width: 84%;
+  width: 87%;
   height: 100%;
-  top: 25%;
-  left: 11%;
+  margin-top: -3%;
+  margin-right: 4%;
   z-index: 3;
+  float: right;
+  position: relative;
+}
+
+#frolicking-page {
+  background-color: #FFEBBE;
+  width: 87%;
+  height: 100%;
+  margin-top: -3%;
+  margin-right: 4%;
+  z-index: 3;
+  float: right;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+#zuko-bolts {
+  width: 64%;
+  right: -41.1%;
+  position: relative;
 }
 
 #box3 {
   background-color: #FFC600;
-  width: 18%;
-  height: 50%;
+  width: 16%;
   top: 31%;
-  left: 2%;
-  z-index: 5;
+  left: 4%;
+  z-index: 1  ;
+  position: absolute;
+  padding-bottom: 3%;
+}
+
+#box3:hover {
+  z-index: 10;
+  transition-delay: .1s;
 }
 
 #box3 li {
-  font-family: 'futura', 'helvetica', 'Roboto', sans-serif;
   font-size: 20px;
   list-style-type: none;
   border-bottom: 3px solid black;
-  padding: 20px 20px 20px 0;
-  width: 75%;
+  padding: 20px 20px 20px 1px;
+  width: 72%;
 }
 
 #box3 a {
@@ -48,10 +74,10 @@ html {
 }
 
 #zuko-title {
-  position: absolute;
-  width: 35%;
+  position: relative;
+  width: 36%;
+  min-width: 220px;
   height: auto;
   margin-left: 15%;
-  margin-top: 2.6%;
-  z-index: 4;
+  margin-top: 2.6%;    z-index: 4;
 }
