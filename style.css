@@ -28,12 +28,44 @@ html, body {
 #frolicking-page {
   background-color: #FFEBBE;
   width: 87%;
-  height: 100%;
+  height: auto;
   margin-top: -3%;
   margin-right: 4%;
   z-index: 3;
   float: right;
   position: relative;
+  margin-bottom: 100px;
+}
+
+#rents-page {
+  background-color: #EB4639 !important;
+  width: 87%;
+  height: auto;
+  margin-top: -3%;
+  margin-right: 4%;
+  z-index: 3;
+  float: right;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#frolicking-inner, #rents-inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 45px;
+  margin-bottom: 40px;
+}
+
+#frolicking-page img, #rents-page img {
+  width: 28%;
+  height: auto;
+  margin: auto;
+  flex: 1;
+  padding: 8px;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
 
 .hidden {
