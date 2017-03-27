@@ -1,95 +1,70 @@
-html, body {
-  background: #A2EEE6;
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
   font-family: 'futura', 'helvetica', 'Roboto', sans-serif;
-  height: 100%;
+  background: #A2EEE6;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 4%;
+  width: 92%;
+  height: 100vh;
+  background: none;
+}
+
+#zuko-title {
+  position: absolute;
+  height: 22%;
+  right: 52%;
+  top: -4.4%;
+  z-index: 5;
 }
 
 #box1 {
-  background-color: #DB7ACC;
-  width: 76%;
-  height: 100%;
-  margin-top: 6%;
-  left: 15%;
-  /*z-index: 1;*/
   position: absolute;
+  background-color: #DB7ACC;
+  width: 84%;
+  height: 100vh;
+  top: 6%;
+  left: 10%;
+  /*z-index: 1;*/
 }
 
 #box2 {
+  position: absolute;
   background-color: #fff;
-  width: 87%;
-  height: 100%;
-  margin-top: -3%;
-  margin-right: 4%;
+  width: 94%;
+  height: 100vh;
+  top: 13%;
+  right: 1.2%;
   z-index: 3;
   float: right;
-  position: relative;
-}
-
-#frolicking-page {
-  background-color: #FFEBBE;
-  width: 87%;
-  height: auto;
-  margin-top: -3%;
-  margin-right: 4%;
-  z-index: 3;
-  float: right;
-  position: relative;
-  margin-bottom: 100px;
-}
-
-#rents-page {
-  background-color: #EB4639 !important;
-  width: 87%;
-  height: auto;
-  margin-top: -3%;
-  margin-right: 4%;
-  z-index: 3;
-  float: right;
-  position: relative;
-  margin-bottom: 100px;
-}
-
-#frolicking-inner, #rents-inner {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 45px;
-  margin-bottom: 40px;
-}
-
-#frolicking-page img, #rents-page img {
-  width: 28%;
-  height: auto;
-  margin: auto;
-  flex: 1;
-  padding: 8px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-}
-
-.hidden {
-  display: none;
-}
-#zuko-bolts {
-  width: 64%;
-  right: -41.1%;
-  position: relative;
 }
 
 #box3 {
-  background-color: #FFC600;
-  width: 16%;
-  top: 31%;
-  left: 4%;
-  z-index: 1  ;
   position: absolute;
-  padding-bottom: 3%;
+  background-color: #FFC600;
+  width: 19%;
+  top: 17%;
+  left: -2.5%;
+  padding-bottom: 5%;
+  transition: all 0.5s;
+  /*z-index: 4;*/
 }
 
 #box3:hover {
+  width: 21%;
   z-index: 10;
-  transition-delay: .1s;
+  /*transition-delay: .5s;*/
 }
 
 #box3 li {
@@ -105,11 +80,134 @@ html, body {
   color: inherit;
 }
 
-#zuko-title {
-  position: relative;
-  width: 36%;
-  min-width: 220px;
+#dope-leaf {
+  position: absolute;
+}
+
+.intro-text {
+  position: absolute;
+  /*font-family: 'Helvetica Neue';*/
+  font-family:'Gochi Hand', cursive;
+  font-size: 38px;
+  line-height: 13px;
+  font-weight: 500;
+  top: 20%;
+  left: 10%;
+}
+
+.intro-text img {
+  width: 30%;
+  margin-left: 27%;
+}
+
+#frolicking-page {
+  position: absolute;
+  background-color: #FFEBBE;
+  width: 94%;
   height: auto;
-  margin-left: 15%;
-  margin-top: 2.6%;    z-index: 4;
+  top: 13%;
+  right: 1.2%;
+  z-index: 3;
+  float: right;
+  margin-bottom: 100px;
+}
+
+#rents-page {
+  position: absolute;
+  font-family:'Gochi Hand', cursive;
+  font-size: 30px;
+  background-color: #EB4639 !important;
+  width: 94%;
+  height: 100vh;
+  top: 13%;
+  right: 1.2%;
+  z-index: 3;
+  float: right;
+  padding: 20px;
+}
+
+.rents-inner img {
+  float: left;
+}
+
+.rents-inner p {
+  width: 75%;
+  margin: 0;
+  padding: 0;
+}
+
+#jess-bruce {
+  width: 30%;
+  height: auto;
+  padding: 10px;
+}
+
+#frolicking-inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 45px;
+  margin-bottom: 40px;
+}
+
+#frolicking-page img {
+  width: 28%;
+  height: auto;
+  margin: auto;
+  flex: 1;
+  padding: 8px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+#zuko-bolts {
+  position: absolute;
+  width: 64%;
+  right: -5.1%;
+  top: -0.111%;
+}
+
+@media all and (max-width: 500px) {
+  #zuko-title {
+    position: absolute;
+    height: 9%;
+    right: 20%;
+    top: -0.5%;
+}
+
+  #zuko-bolts {
+    width: 93%;
+    right: -9.9%;
+  }
+
+  #box2 {
+    top: 9%;
+  }
+
+  #dope-leaf {
+    width: 100%;
+  }
+
+  .intro-text {
+    font-size: 25px;
+    top: 35%;
+  }
+
+  #box3 {
+    width: 40%;
+    top: 17%;
+    left: -14.5%;
+    padding-bottom: 5%;
+  }
+
+  #box3 li {
+    font-size: 11px;
+    padding: 10px 10px 10px 1px;
+    border-bottom: 2px solid black;
+  }
+
 }

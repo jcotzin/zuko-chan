@@ -5,80 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ZUKO</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-    <div id="box1"></div>
-    <div id="zuko-title" >
-      <img src="images/z.svg" alt="Zuko">
-    </div>
-    <div id="box2">
-      <!-- <div class="intro-text">
-        <h3>hi, i'm Zuko the dog.</h3>
-      </div> -->
-      <img id="zuko-bolts" src="images/zuko-bolts.svg" alt="">
-    </div>
-    <div id="box3">
-      <ul>
-        <li><a href="#" id="about">about</a></li>
-        <li><a href="#" id="frolicking">frolicking</a></li>
-        <li><a href="#" id="rents">my 'rents</a></li>
-        <li><a href="#">stuff</a></li>
-      </ul>
-    </div>
-    <div id="frolicking-page" class="hidden">
-      <div id="frolicking-inner">
-        <img src="images/zu1.png" alt="">
-        <img src="images/zu2.png" alt="">
-        <img src="images/zu3.png" alt="">
-        <img src="images/zu4.png" alt="">
-        <img src="images/zu5.png" alt="">
-        <img src="images/zu6.png" alt="">
-        <img src="images/zu7.png" alt="">
-        <img src="images/zu8.png" alt="">
-        <img src="images/zu9.png" alt="">
-        <img src="images/zu10.png" alt="">
-        <img src="images/zu11.png" alt="">
-        <img src="images/zu12.png" alt="">
+    <div class="container">
+
+      <img src="images/z.svg" id="zuko-title" alt="Zuko">
+      <div id="box1">
       </div>
-    </div>
-    <div id="rents-page" class="hidden">
-      <div class="rents-inner">
-          <img src="images/bruce.jpg" alt="">
-          <img src="images/jess.jpg" alt="">
+
+      <div id="box2">
+        <img id="dope-leaf" src="images/dope-leaf.png" alt="">
+          <div class="intro-text">
+            <p>Hi, i'm Zuko the dog.</p>
+            <p>Enter my domain</p>
+            <img src="images/zuko-arrow.png" alt="">
+          </div>
+        <img id="zuko-bolts" src="images/zuko-bolts.svg" alt="">
       </div>
+
+
+      <div id="box3">
+        <ul>
+          <li><a href="#" id="about">about</a></li>
+          <li><a href="#" id="frolicking">frolicking</a></li>
+          <li><a href="#" id="rents">my 'rents</a></li>
+          <li><a href="#">stuff</a></li>
+        </ul>
+      </div>
+
+      <div id="frolicking-page" class="hidden">
+        <div id="frolicking-inner">
+          <img src="images/zu1.png" alt="">
+          <img src="images/zu2.png" alt="">
+          <img src="images/zu3.png" alt="">
+          <img src="images/zu4.png" alt="">
+          <img src="images/zu5.png" alt="">
+          <img src="images/zu6.png" alt="">
+          <img src="images/zu7.png" alt="">
+          <img src="images/zu8.png" alt="">
+          <img src="images/zu9.png" alt="">
+          <img src="images/zu10.png" alt="">
+          <img src="images/zu11.png" alt="">
+          <img src="images/zu12.png" alt="">
+        </div>
+      </div>
+
+      <div id="rents-page" class="hidden">
+        <div class="rents-inner">
+            <img id="jess-bruce" src="images/jess&bruce.jpg" alt="">
+            <p>These are my parents. They adopted me when I was three years old. Life since then has been an adventure!</p>
+        </div>
+      </div>
+
     </div>
 
-  </body>
-</html>
+    </body>
+  </html>
 
 <script>
 
   function showFrolicking(e) {
     e.preventDefault();
-    zukoPic.classList.add('hidden');
-    box2.classList.add('hidden');
+    box2Page.classList.add('hidden');
+    rentsPage.classList.add('hidden');
     frolickingPage.classList.remove('hidden');
   }
 
   function showAbout(e) {
     e.preventDefault();
+    box2Page.classList.remove('hidden');
     frolickingPage.classList.add('hidden');
-    zukoPic.classList.remove('hidden');
-    box2.classList.remove('hidden');
+    rentsPage.classList.add('hidden');
   }
 
   function showRents(e) {
     e.preventDefault();
-    rentsPage = document.getElementById('rents-page');
-    zukoPic.classList.add('hidden');
-    box2.classList.add('hidden');
+    box2Page.classList.add('hidden');
+    frolickingPage.classList.add('hidden');
     rentsPage.classList.remove('hidden');
   }
+
   var frolickingPage = document.getElementById('frolicking-page');
-  var frolickingPage = document.getElementById('frolicking-page');
-  var zukoPic = document.getElementById('zuko-bolts');
-  var box2 = document.getElementById('box2')
+  var box2Page = document.getElementById('box2');
+  var rentsPage = document.getElementById('rents-page');
 
   var frolickingLink = document.getElementById('frolicking');
   var aboutLink = document.getElementById('about');
