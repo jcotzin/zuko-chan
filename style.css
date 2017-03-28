@@ -126,20 +126,32 @@ body {
   padding: 20px;
 }
 
+#rents-page p {
+  width: 43%;
+  margin-left: 49%;
+  top: 9%;
+  position: absolute;
+}
+
 .rents-inner img {
   float: left;
 }
 
-.rents-inner p {
-  width: 75%;
-  margin: 0;
-  padding: 0;
+.rents-inner {
+  background: #A0FFBE;
+  width: 45%;
+  height: 53%;
+  top: 9%;
+  position: absolute;
 }
 
 #jess-bruce {
-  width: 30%;
+  position: absolute;
+  width: 78%;
   height: auto;
   padding: 10px;
+  margin-top: 6%;
+  margin-left: 3%;
 }
 
 #frolicking-inner {
@@ -174,8 +186,8 @@ body {
 @media all and (max-width: 500px) {
   #zuko-title {
     position: absolute;
-    height: 9%;
-    right: 20%;
+    height: 12%;
+    right: 27%;
     top: -0.5%;
 }
 
@@ -198,7 +210,7 @@ body {
   }
 
   #box3 {
-    width: 40%;
+    width: 42%;
     top: 17%;
     left: -14.5%;
     padding-bottom: 5%;
@@ -208,6 +220,51 @@ body {
     font-size: 11px;
     padding: 10px 10px 10px 1px;
     border-bottom: 2px solid black;
+  }
+
+  #box3:hover {
+    width: 38%;
+  }
+
+  #frolicking-page {
+    margin-bottom: 50px;
+    top: 9%;
+  }
+
+  #frolicking-inner {
+    margin-bottom: 20px;
+  }
+
+  #frolicking-page img {
+    flex: 1 100%;
+    padding: 0;
+  }
+
+  #frolicking-page img:first-child {
+    margin-top: 20px;
+  }
+
+  #rents-page {
+    top: 9%;
+    font-size: 18px;
+  }
+
+  #rents-page p {
+    top: 40%;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .rents-inner {
+    width: 86%;
+    height: 34%;
+    top: 5%;
+  }
+
+  #jess-bruce {
+    width: 85%;
+    margin-top: 3%;
+    margin-left: 1%;
   }
 
 }
