@@ -23,9 +23,9 @@ body {
 
 #zuko-title {
   position: absolute;
-  height: 22%;
+  height: 15%;
   right: 52%;
-  top: -4.4%;
+  top: -2%;
   z-index: 5;
 }
 
@@ -186,9 +186,9 @@ body {
 @media all and (max-width: 500px) {
   #zuko-title {
     position: absolute;
-    height: 12%;
+    height: 9%;
     right: 27%;
-    top: -0.5%;
+    top: 0%;
 }
 
   #zuko-bolts {
@@ -206,24 +206,26 @@ body {
 
   .intro-text {
     font-size: 25px;
-    top: 35%;
+    top: 43%;
+    left: 15%;
   }
 
   #box3 {
-    width: 42%;
+    width: 49%;
     top: 17%;
     left: -14.5%;
     padding-bottom: 5%;
   }
 
   #box3 li {
-    font-size: 11px;
+    font-size: 13px;
     padding: 10px 10px 10px 1px;
     border-bottom: 2px solid black;
+    width: 81%;
   }
 
   #box3:hover {
-    width: 38%;
+    width: 46%;
   }
 
   #frolicking-page {
